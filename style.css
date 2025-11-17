@@ -1,0 +1,95 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;700&display=swap');
+
+/* Variáveis de cor (Barbiecore Palette) */
+:root {
+    --rosa-choque: #FF007F; /* O Fúcsia clássico */
+    --rosa-bebe: #F8BBD0;   /* Fundo suave */
+    --branco-glam: #FFFFFF;
+    --prateado: #C0C0C0;
+    --sombra: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: var(--rosa-bebe);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: var(--branco-glam);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--sombra);
+    max-width: 800px;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    color: var(--rosa-choque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 var(--prateado);
+}
+
+#historia {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid var(--rosa-choque);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    background-color: var(--rosa-choque);
+    color: var(--branco-glam);
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    box-shadow: 0 5px 10px var(--sombra);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #ff3399; /* Um tom um pouco mais claro */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px var(--sombra);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px var(--sombra);
+}
+
+.recomecar-btn {
+    margin-top: 25px;
+    background-color: var(--prateado) !important;
+    color: #333 !important;
+}
+
+footer {
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9em;
+}
